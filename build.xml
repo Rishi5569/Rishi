@@ -38,11 +38,10 @@
         <echo> Java file compiled and copied to classes folder !</echo>
     </target>
     <target name="buildwar" description="Building War File" depends="compile">
-        <war destfile="./build/testapplication.war" webxml="./WebContent/WEB-INF/web.xml">
+       
             <fileset dir="./WebContent">
                 <include name="**/*.jsp" />
-                <include name="*/*.xml" />
-                <include name="**/*.jar" />
+               
             </fileset>
             <classes dir="./build/classes" />
         </war>
