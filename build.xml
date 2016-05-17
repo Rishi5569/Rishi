@@ -41,7 +41,7 @@
        <fileset dir="./WebContent">
             <include name="**/*.jsp" />
        </fileset>
-            <classes dir="./builds/classes" />
+            <classes dir="./build/classes" />
         
     </target>
     <target name="deploy" depends="buildwar,cleanDeploy">
