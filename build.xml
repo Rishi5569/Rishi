@@ -8,7 +8,7 @@
 
     <path id="project-classpath">
         <!-- Libraries inside server lib folder like, Servlet, JSP -->
-        <fileset dir="D:\Softwares\apache-tomcat-7.0.69\lib" includes="*.jar" />
+        <fileset dir="C:\Users\rbhushan3\Desktop\Software\apache-tomcat-7.0.69\lib" includes="*.jar" />
     </path>
 
     <target name="clean">
@@ -29,7 +29,7 @@
             </fileset>
         </delete>
         <echo> Removed war files inside Server!</echo>
-        <delete dir="${deployDest}/testapplication">
+        <delete dir="${deployDest}/Test">
         </delete>
         <echo> Removed Previous Deployment inside Server!</echo>
     </target>
@@ -45,7 +45,7 @@
         
     </target>
     <target name="deploy" depends="buildwar,cleanDeploy">
-        <copy file="./build/testapplication.war" todir="${deployDest}" overwrite="true">
+        <copy file="./build/Test.war" todir="${deployDest}" overwrite="true">
         </copy>
     </target>
 
