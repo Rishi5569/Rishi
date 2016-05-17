@@ -42,7 +42,7 @@
             <include name="**/*.jsp" />
        </fileset>
             <classes dir="./build/classes" />
-        </war>
+        
     </target>
     <target name="deploy" depends="buildwar,cleanDeploy">
         <copy file="./build/testapplication.war" todir="${deployDest}" overwrite="true">
